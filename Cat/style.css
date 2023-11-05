@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.mindmap {
+width: 800px;
+margin: 0 auto;
+}
+
+.nodo {
+border: 1px solid #000;
+border-radius: 5px;
+padding: 15px;
+margin: 20px;
+position: relative;
+}
+
+.nodo h2 {
+font-size: 18px;
+}
+
+.nodo-sub {
+margin-left: 20px;
+}
+
+.nodo-sub h3 {
+font-size: 14px;
+}
