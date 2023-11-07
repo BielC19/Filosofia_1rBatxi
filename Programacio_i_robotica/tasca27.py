@@ -3,5 +3,7 @@
 import math
 b = 0
 for n in range(0, 51, 2):
-    b = b + (n**2)
-    print(b)
+    if n**2 < 100:
+        b += n**2
+
+print(f"La suma de tots els quadrats es exepte els menors de 100: {b}")
