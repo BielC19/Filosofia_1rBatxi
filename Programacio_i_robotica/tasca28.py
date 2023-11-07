@@ -4,7 +4,7 @@ a = 0
 llista = []
 b = int(input("Quant numeros vols comprocar: "))
 while a!=b:
-    noms = input("Introdueix els noms separats per comes: ")
+    noms = input("Introdueix un numero: ")
     llista.append(noms)
     a += 1
-print(max(llista))
+def maxim(valors):
