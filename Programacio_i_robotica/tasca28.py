@@ -4,6 +4,12 @@
 llista = []
 b = int(input("Quant numeros vols comprocar: "))
 for a in range(b):
-    noms = input("Introdueix un numero: ")
+    noms = int(input("Introdueix un numero: "))
     llista.append(noms)
     a += 1
+
+c = 0
+for i in llista:
+    if i > c:
+        c = i
+print(c)
