@@ -13,3 +13,9 @@ for i in llista:
     if i > c:
         c = i
 print(c)
+
+d = llista[0]
+for i in llista:
+    if i > d:
+        d = i
+print(d)
