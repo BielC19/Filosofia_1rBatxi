@@ -6,7 +6,6 @@ b = int(input("Quant numeros vols comprocar: "))
 for a in range(b):
     noms = int(input("Introdueix un numero: "))
     llista.append(noms)
-    a += 1
 
 c = 0
 for i in llista:
@@ -16,6 +15,6 @@ print(c)
 
 d = llista[0]
 for i in llista:
-    if i > d:
+    if i < d:
         d = i
 print(d)
