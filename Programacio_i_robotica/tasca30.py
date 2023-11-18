@@ -9,7 +9,11 @@ for i in range(2, a):
         n+=1
         if (i%n) == 0:
             b += n
+
     llista_de_valors.append(b)
     b=0
+for i in llista_de_valors:
+    if a < i:
+        llista_de_valors.remove(i)
 
 print(f"els teus valor perfectes son {llista_de_valors}")
