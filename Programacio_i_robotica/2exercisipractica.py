@@ -6,12 +6,22 @@
 #Si l'usuari decideix fer una altra operació, sol·licita una nova llista de nombres.
 llista5num = []
 for n in range(5):
-    a = int(input("Introdueix un numero: "))
-    b = True
-    while b:
+    a = float(input("Introdueix un numero: "))
+    while True:
         if a <= 10:
             a = int(input("Introdueix un valor mes gran que 10: "))
         else:
-            b = False
+            break
     llista5num.append(a)
-print(llista5num)
+s = int(input("Si vol que es sumin tots els numeros introduits intrrodueixi 1, si vol que es miltiploquin introdueixi 2, si vol sortir del programa introdueixi 0: "))
+c = 0
+if s == 1:
+    for i in llista5num:
+        c += i
+    print(f"tots el valos sumts son: {c}")
+elif s == 2:
+    for i in llista5num:
+        c += c * i
+    print(f"tots el valos multiplicats son: {c}")
+elif s == 0:
+    exit()
