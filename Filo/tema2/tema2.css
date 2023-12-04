@@ -1,0 +1,58 @@
+.veritat{
+    color: green;
+}
+.fals{
+    color: red;
+}
+.btn {
+    display: table;
+}
+div {
+    margin-left: 20px;
+    width: 45%;
+    height: auto;
+    
+}
+table {
+    display: table-row;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.important{
+    background-color: #e3e3e3;
+}
+.teoriess{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 255, 0.315);
+}
+.ll li{
+    margin-right: 20px;
+}
+:root{
+    --dinstancia-li: 15px
+}
+.espai {
+    margin-left: 4em;
+}
+tr {
+    background-color: rgba(0, 0, 0, 0.26);
+}
+img{
+    max-width: 30vw;
+    width: 50vw;
+    transition: transform .2;
+}
+#sasasa{
+    margin-left: 300px;
+}
+img:hover{
+    transform: scale(3.0);
+}
+.examen ol{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
