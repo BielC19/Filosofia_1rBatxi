@@ -1,6 +1,9 @@
 .veritat{
     color: green;
 }
+.kant{
+    display: flex;
+}
 .fals{
     color: red;
 }

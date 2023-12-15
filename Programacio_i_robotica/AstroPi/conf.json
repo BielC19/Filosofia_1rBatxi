@@ -1,0 +1,9 @@
+{
+    "name": "Astro Pi Replay",
+    "type": "python",
+    "request": "launch",
+    "module": "astro-pi-replay",
+    "args": [
+        "./main.py"
+    ]
+}
