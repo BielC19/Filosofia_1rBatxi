@@ -6,7 +6,7 @@ function App() {
   const [inputValue, setInputValue] = useState<string>('');
   const [items, setItems] = useState<string[]>([]);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: any) => {
     setInputValue(e.target.value);
   };
 
