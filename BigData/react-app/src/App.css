@@ -7,7 +7,18 @@ li {
     width: 40vw;
     margin: 0;
     margin-left: 2em;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 ul {
     margin-left: 10em;
+}
+
+.btnInp {
+    width: 20vw;
+}
+p {
+    text-align: center;
 }
