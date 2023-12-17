@@ -21,7 +21,7 @@ function App() {
 
   const sss = (contrato: string) => {
     let indice = contratos.indexOf(contrato);
-    items.splice(indice,0); // aplica splice a la copia
+    items.splice(indice, 1); // aplica splice a la copia
     setContratos(items)
     console.log(contrato + " Borrat       " + items);
     };
@@ -29,6 +29,9 @@ function App() {
   const handleSelectItem = (item: string) => {
     items.indexOf(item)
     console.log(item);
+  }
+  const chekk = () =>{
+    inputValue == ''? alert('has d\'introduir algo'): inputValue;
   }
 
   return(
@@ -39,6 +42,7 @@ function App() {
         type="text"
         value={inputValue}
         onChange={handleInputChange}
+        placeholder='Afegir una tasca'
         />
         <button onClick={handleAddItem}>Add Item</button>
       </div>

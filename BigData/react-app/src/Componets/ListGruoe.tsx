@@ -21,9 +21,10 @@ const [selectedIndex, setSelectedIndex] = useState(-1);
                 key={item} 
                 onClick={() => {
                     setSelectedIndex(index);
-                    onSelectItem(item)
+                    onSelectItem(item);
+                    AAa(item);
                 }} 
-            ><input type="checkbox" name="index" onChange={() => AAa(item) } />
+            >
             {item}
                 </li>
             ))}
