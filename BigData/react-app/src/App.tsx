@@ -4,15 +4,16 @@ import ListGrup from "./Componets/ListGruoe";
 
 function App() {
   const [inputValue, setInputValue] = useState<string>('');
-  const [items, setItems] = useState<string[]>([]);
+  const [items, setItems] = useState<string[]>(['Fer els deures de Big Data', 'Agrair al Jordi per el 9', 'Formatge']);
 
   const handleInputChange = (e: any) => {
     setInputValue(e.target.value);
   };
 
   const handleAddItem = () => {
-    setItems([...items, inputValue]);
+    inputValue == ''? alert('has d\'introduir algo'): setItems([...items, inputValue]);
     setInputValue('');
+    ;
   };
 
 
@@ -31,7 +32,7 @@ function App() {
     console.log(item);
   }
   const chekk = () =>{
-    inputValue == ''? alert('has d\'introduir algo'): inputValue;
+
   }
 
   return(
