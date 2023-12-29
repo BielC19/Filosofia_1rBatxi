@@ -11,6 +11,9 @@ li {
     align-items: center;
     align-content: center;
     justify-content: center;
+    /*cursor: wait;
+    cursor: progress;*/
+    cursor: pointer;
 }
 ul {
     margin-left: 10em;
@@ -21,4 +24,7 @@ ul {
 }
 p {
     text-align: center;
+}
+.hidden{
+    display: none;
 }

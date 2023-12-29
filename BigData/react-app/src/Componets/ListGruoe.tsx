@@ -7,7 +7,7 @@ import { useState } from "react";
 
 function ListGrup({items, onSelectItem, AAa}: Props) {
 // Hook : vol dir que te dades que poden canviar tota l'estona
-const [selectedIndex, setSelectedIndex] = useState(-1);
+const [selectedIndex, setSelectedIndex] = useState(0);
 
     return (
         <>
@@ -17,12 +17,12 @@ const [selectedIndex, setSelectedIndex] = useState(-1);
             {items.length === 0 && <p>Items not found</p>} 
             {items.map((item, index) => (
             <li 
-                className={ /*selectedIndex === index ? 'list-group-item ': */'list-group-item'} 
+                className={ 'list-group-item'} 
                 key={item} 
                 onClick={() => {
+
                     setSelectedIndex(index);
-                    onSelectItem(item);
-                    AAa(item);
+                    delete(items[index]);
                 }} 
             >
             {item}
