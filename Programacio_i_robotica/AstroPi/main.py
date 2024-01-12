@@ -107,12 +107,7 @@ def custom_capture(iss, camera, image):
     camera.exif_tags['GPS.GPSLongitudeRef'] = "W" if west else "E"
     camera.capture(image)
 
-  # Replace with your estimate
 
-# Format the estimate_kmps to have a precision
-# of 5 significant figures
-
-# Create a string to write to the file
 with open(file_path, 'w') as file:
     file.write(output_string)
 
