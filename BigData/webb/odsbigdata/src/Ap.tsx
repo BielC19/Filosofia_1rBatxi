@@ -16,9 +16,7 @@ function App() {
           Biel Costa, Hugo Martin i Genis Baños
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
     </>
   )
 }
