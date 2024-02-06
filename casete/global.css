@@ -1,0 +1,15 @@
+body {
+    margin-top: 5em;
+    margin: 2em;
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+div {
+    padding: 2em;
+    background-color: rgba(128, 128, 128, 0.582);
+    height: 100%;
+    border-radius: 2em;
+    text-align: justify;
+}
