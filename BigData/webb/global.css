@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;700&family=Raleway&display=swap');
+:root {
+    --onyx: #424242ff;
+    --coffee: #7e5841ff;
+    --brown-sugar: #b96d40ff;
+    --celadon: #EDE9E9;
+    --fons_div: #ffffff;
+    --sunset: #ffcf9cff;
+    --name: red;
+    --fons: #F7F2F2;
+    --text-size-s: 16px;
+    --box-shadow-transition: box-shadow 0.2s ease-out 0s;
+    --box-shadow-button: #f0f2f8 0px 0px 0px 2px;
+    --aaaa: rgb(255, 35, 35);
+}
+body{
+    display: block;
+    position: relative;
+    background-color: var(--fons);
+
+}
+.ordre{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end; 
+}
+.shadow{
+    top: 0px;
+    align-items: center;
+    width: 700px;
+    
+}
+.shadow, header, footer{
+    background-color: var(--fons_div);
+    border-radius: 64px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 4em;
+    padding-bottom: 2%;
+    padding-top: 1%;
+
+}
+
+.bar{
+    display: inline-block;
+    margin-top: 0.7em;
+    border-radius: 30px;
+    background-color: var(--celadon);
+}
+
+ul {
+    display: flex;
+    grid-template-rows: 2em;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+li {
+    list-style: none;
+
+}
+nav a {
+    color: var(--onyx);
+    cursor: pointer;
+    text-decoration-line: none;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--text-size-s);
+    font-weight: bolder;
+}
+
+#segon{
+    margin-left: 3em;
+}
+#tercer{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+
+footer{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+
+}
+footer button img{
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: var(--text-color);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+}
+.contact{
+    color: var(--onyx);
+    background-color: var(--fons_div);
+    border-radius: 64px;
+    margin-top: 1em;
+    margin-bottom: 1em;;
+    padding: 1em;
+    display: inline-block;
+    margin-top: 0.7em;
+    font-family:'Hanken Grotesk';
+}
+.contact h2{
+    display: inline;
+    color: #000000;
+    font-size: 20px;
+
+}
+
+.contact button{
+    color: var(--onyx);
+    font-size: var(--text-size-s);
+    background-color: var(--card-background-color);
+    padding: 1rem;
+    border-radius: 64px;
+    cursor: pointer;
+    transition: var(--box-shadow-transition);
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    .shadow{
+    width: 100%;
+    height: auto;
+    }
+    .shadow, header, footer{
+        background-color: var(--fons_div);
+        border-radius: 32px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    nav{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: auto;
+        height: 4em;
+        padding-bottom: 2%;
+        padding-top: 0;
+    
+    }
+    
+    .bar{
+        display: inline-block;
+        margin-top: 0.7em;
+        border-radius: 32px;
+        background-color: var(--celadon);
+        margin-left: 3%;
+    }
+    
+    ul {
+        display: flex;
+        grid-template-rows: 2em;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    
+    }
+    li {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: min-content;
+        list-style: none;
+    
+    }
+    nav a {
+        color: var(--onyx);
+        cursor: pointer;
+        text-decoration-line: none;
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        font-size: 13px;
+    }
+    
+    #segon{
+        margin-left: 3em;
+    }
+    #tercer{
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    
+    
+    footer{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+    footer button img{
+        width: 16px;
+        height: auto;
+        fill: none;
+        stroke: var(--text-color);
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    
+    }
+    .contact{
+        color: var(--onyx);
+        background-color: var(--fons_div);
+        border-radius: 64px;
+        margin-top: 1em;
+        margin-bottom: 1em;;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.7em;
+        font-family:'Hanken Grotesk';
+
+    }
+    .contact h2{
+        display: inline;
+        color: #000000;
+        font-size: 20px;
+        
+    
+    }
+    
+    .contact button{
+        max-width: 70%;
+        color: var(--onyx);
+        font-size: var(--text-size-s);
+        background-color: var(--card-background-color);
+        padding: 1rem;
+        border-radius: 64px;
+        cursor: pointer;
+        transition: var(--box-shadow-transition);
+        margin-top: 5%;
+    }
+}

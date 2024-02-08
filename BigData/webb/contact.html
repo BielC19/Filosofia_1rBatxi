@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form name="contactForm" onsubmit="return validateContactForm()">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" rows="6" name="message"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2 id="result"></h2>
+
+    <script>
+function sendEmail(){
+    Email.send ({
+    Host : "smtp gmail.com",
+    Username : "",
+    Password : "",
+    To: "avinashkrdm@gmail.com" ,
+    From : document.getElementById( "email"). value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name: " + document.getElementById ("name"). value
+    + "<br> Email: " + document.getElementById ("email"). value
+    + "‹br> Phone no: " + document. getElementById ("phone"). value
+    + "<br> Message: " + document.getElementById ("message"). value
+}). then (
+message => alert (message)
+);
+}
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
+    </script>
+
+
+    <h2>Contact Information</h2>
+    <p>Phone: +1 234 5678</p>
+    <p>Email: info@example.com</p>
+    <p>Address: 123 Street, City, Country</p>
+    <p>Social Media:</p>
+    <ul>
+        <li><a href="https://www.facebook.com/example">Facebook</a></li>
+        <li><a href="https://www.twitter.com/example">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/company/example">LinkedIn</a></li>
+    </ul>
+</body>
+</html>
