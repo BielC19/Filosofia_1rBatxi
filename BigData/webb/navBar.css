@@ -7,6 +7,11 @@ body {
     width: 700px;
     
 }
+
+#actiu{
+    color: red;
+}
+
 .shadow {
     background-color: var(--fons_div);
     border-radius: 64px;

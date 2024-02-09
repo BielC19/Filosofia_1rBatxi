@@ -8,6 +8,11 @@ const a6 = 'necessitat'
 const dicA = [0, a1, a2, a3, a4, a5, a6]
 const lletres = ['a','b','c','d','e','f','g','h','i','j','k','l', 'ñ','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
+const lletres2 = lletres.reverse();
+
+const url = window.parent.location.pathname;
+console.log(url)
+
 window.onload = function() {
     for (let i = 6; i >= 1; i--) {
         let elementNul = document.querySelector('ul');
@@ -15,19 +20,21 @@ window.onload = function() {
         nouli.setAttribute('id', lletres[i])
         nouli.setAttribute('class', 'licss')
         elementNul.prepend(nouli);
-
-        let elementNli = document.getElementById(lletres[i]);
-        let noua = document.createElement('a');
         
-        noua.setAttribute('target', '_top');
-        noua.setAttribute('href', dicA[i] + '.html');
-        noua.innerHTML = dicA[i];
+        let elementNLi = document.getElementById(lletres[i]);
+        let nouA = document.createElement('a');
 
-        elementNli.prepend(noua);
+        nouA.setAttribute('id', lletres2[i])
+        nouA.setAttribute('target', '_top');
+        nouA.setAttribute('href', dicA[i] + '.html');
+        nouA.innerHTML = dicA[i];
+        if (url === '/' + dicA[i] + '.html') {
+            nouA.setAttribute('id', 'actiu')
+        }
+        elementNLi.prepend(nouA);
     }
 }
 
 
 /// traker
-const url = window.location.pathname;
-console.log(url)
+
