@@ -26,22 +26,24 @@ h1 {
 h3{
     font-size: 36px;
 }
+
 .box_nom{
     display: flex;
     margin-right: 70px;
     margin-bottom: 70px;
     margin-left: 200px;
+    align-items: end;
 }
 
 h1 span{
-    letter-spacing: 1rem;
+    letter-spacing: 0rem;
 }
 .png img{
     width: 300px;
     height: unset;
     margin-left: 10em;
     margin-top: 7em;
-    border-radius: 999px;
+    border-radius: 9px;
 }
 @media screen and (max-width: 600px) {
     header {

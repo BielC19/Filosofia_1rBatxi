@@ -28,64 +28,18 @@ body{
     align-items: center;
     justify-content: flex-end; 
 }
-.shadow{
-    top: 0px;
-    align-items: center;
-    width: 700px;
-    
-}
-.shadow, header, footer{
+
+header, footer{
     background-color: var(--fons_div);
     border-radius: 64px;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
-nav{
+.midaNav{
     display: flex;
-    justify-content: center;
-    width: auto;
-    height: 4em;
-    padding-bottom: 2%;
-    padding-top: 1%;
-
-}
-
-.bar{
-    display: inline-block;
-    margin-top: 0.7em;
-    border-radius: 30px;
-    background-color: var(--celadon);
-}
-
-ul {
-    display: flex;
-    grid-template-rows: 2em;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-li {
-    list-style: none;
-
-}
-nav a {
-    color: var(--onyx);
-    cursor: pointer;
-    text-decoration-line: none;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-size: var(--text-size-s);
-    font-weight: bolder;
-}
-
-#segon{
-    margin-left: 3em;
-}
-#tercer{
-    margin-left: 3em;
-    margin-right: 3em;
+    align-items: center;
+    width: 100%;
 }
 
 
