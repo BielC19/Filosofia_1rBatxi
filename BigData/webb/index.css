@@ -10,6 +10,9 @@ header {
     margin-bottom: 1em;
     margin-left: 6em;
 }
+header, body {
+    margin-top: 0;
+}
 h1, h3{
     font-family: 'Hanken Grotesk', sans-serif;
 }

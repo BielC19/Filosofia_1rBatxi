@@ -1,3 +1,4 @@
+//links
 const a1 = 'index'
 const a2 = 'aproximacio a la solucio'
 const a3 = 'beneficis'
@@ -25,3 +26,8 @@ window.onload = function() {
         elementNli.prepend(noua);
     }
 }
+
+
+/// traker
+const url = window.location.pathname;
+console.log(url)

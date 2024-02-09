@@ -43,49 +43,11 @@ header, footer{
 }
 
 
-footer{
-    width: 700px;
-    display: flex;
-    justify-content: center;
-
-}
-footer button img{
-    width: 24px;
-    height: 24px;
-    fill: none;
-    stroke: var(--text-color);
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-
-}
-.contact{
-    color: var(--onyx);
-    background-color: var(--fons_div);
-    border-radius: 64px;
-    margin-top: 1em;
-    margin-bottom: 1em;;
-    padding: 1em;
-    display: inline-block;
-    margin-top: 0.7em;
-    font-family:'Hanken Grotesk';
-}
-.contact h2{
-    display: inline;
-    color: #000000;
-    font-size: 20px;
-
+iframe[src="footer.html"] {
+    width: 100%;
 }
 
-.contact button{
-    color: var(--onyx);
-    font-size: var(--text-size-s);
-    background-color: var(--card-background-color);
-    padding: 1rem;
-    border-radius: 64px;
-    cursor: pointer;
-    transition: var(--box-shadow-transition);
-}
+
 @media screen and (max-width: 600px) {
     body {
         font-size: 18px;
