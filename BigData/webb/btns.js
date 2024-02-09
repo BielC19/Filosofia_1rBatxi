@@ -26,9 +26,9 @@ window.onload = function() {
 
         nouA.setAttribute('id', lletres2[i])
         nouA.setAttribute('target', '_top');
-        nouA.setAttribute('href', dicA[i] + '.html');
+        nouA.setAttribute('href', dicA[i]);
         nouA.innerHTML = dicA[i];
-        if (url === '/' + dicA[i] + '.html') {
+        if (url === '/1rBarxiA_BCS/BigData/webb/' + dicA[i]) {
             nouA.setAttribute('id', 'actiu')
         }
         elementNLi.prepend(nouA);
