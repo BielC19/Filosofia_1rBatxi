@@ -18,8 +18,10 @@ body{
     display: block;
     position: relative;
     background-color: var(--fons);
+    margin: 0;
 
 }
+
 .ordre{
     display: flex;
     flex-direction: column;
@@ -41,9 +43,19 @@ header, footer{
     align-items: center;
     width: 100%;
 }
+.box_nom{
+    display: flex;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    margin-left: 200px;
+    align-items: end;
+}
 
 
 iframe[src="footer.html"] {
+    width: 100%;
+}
+#foofi {
     width: 100%;
 }
 
