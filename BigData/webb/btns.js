@@ -33,17 +33,21 @@ window.onload = function() {
         ///if (url === '/' + dicA[i] + '.html') {
             nouA.setAttribute('id', 'actiu')
         }
-        let element = document.getElementById(lletres2[i])
-        if (url === '/1rBarxiA_BCS/BigData/webb/') {
-                    element.setAttribute('id', 'actiu')
-            }
-        else if (url === '/1rBarxiA_BCS/BigData/webb/aproximacio%20a%20la%20solucio') {
-            ///if (url === '/' + dicA[i] + '.html') {
-                element.setAttribute('id', 'actiu')
-            }
+
 
         elementNLi.prepend(nouA);
     }
 }
+for (let i = 6; i >= 1; i--) {
+    
+    let element = document.getElementById(lletres2[i])
 
+    if (url === '/1rBarxiA_BCS/BigData/webb/') {
+                element.setAttribute('id', 'actiu')
+        }
+    else if (url === '/1rBarxiA_BCS/BigData/webb/aproximacio%20a%20la%20solucio') {
+        ///if (url === '/' + dicA[i] + '.html') {
+            element.setAttribute('id', 'actiu')
+        }
+}
 /// traker
