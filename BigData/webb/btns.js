@@ -10,6 +10,8 @@ const lletres = ['a','b','c','d','e','f','g','h','i','j','k','l', 'ñ','m','n','
 
 const lletres2 = ['r1','r2','r3','r4','r5','r6','r7','r8','r9','r0','r11','r12'];
 
+const noFuncinen = []
+
 const url = window.parent.location.pathname;
 console.log(url)
 
@@ -31,7 +33,7 @@ window.onload = function() {
         nouA.innerHTML = dicA[i];
         if (url === '/1rBarxiA_BCS/BigData/webb/' + dicA[i]) {
         ///if (url === '/' + dicA[i] + '.html') {
-            nouA.setAttribute('id', 'actiu')
+            nouA.setAttribute('class', 'actiu')
         }
 
 
@@ -39,14 +41,14 @@ window.onload = function() {
     }
     for (let i = 6; i >= 1; i--) {
         
-        let element = document.getElementById(lletres2[i])
+        let element = document.getElementById(noFuncinen[i])
 
         if (url === '/1rBarxiA_BCS/BigData/webb/') {
-            element.setAttribute('id', 'actiu')
+            element.setAttribute('class', 'actiu')
         }
         else if (url === '/1rBarxiA_BCS/BigData/webb/aproximacio%20a%20la%20solucio') {
         ///if (url === '/' + dicA[i] + '.html') {
-            element.setAttribute('id', 'actiu')
+            element.setAttribute('class', 'actiu')
         }
     }
 }
