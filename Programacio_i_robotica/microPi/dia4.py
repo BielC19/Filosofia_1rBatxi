@@ -1,8 +1,9 @@
-from machine import Pin
+from machine import Pin, PWM
 import time
 
-button = Pin(12, Pin.IN)
+buzzer = PWM(Pin(12))
 
-while True:
-    print(button.value())
-    time.sleep(0.1)
+buzzer.freq(17000)
+buzzer.duty_u16(1000)
+time.sleep(1)
+buzzer.duty_u16(0)
