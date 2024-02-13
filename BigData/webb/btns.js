@@ -8,7 +8,7 @@ const a6 = 'necessitat'
 const dicA = [0, a1, a2, a3, a4, a5, a6]
 const lletres = ['a','b','c','d','e','f','g','h','i','j','k','l', 'ñ','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
-const lletres2 = lletres.reverse();
+const lletres2 = ['r1','r2','r3','r4','r5','r6','r7','r8','r9','r0','r11','r12'];
 
 const url = window.parent.location.pathname;
 console.log(url)
@@ -33,15 +33,18 @@ window.onload = function() {
         ///if (url === '/' + dicA[i] + '.html') {
             nouA.setAttribute('id', 'actiu')
         }
-/*        else if (url === '/1rBarxiA_BCS/BigData/webb/') {
+
+        elementNLi.prepend(nouA);
+    }/*
+    var element =
+
+    else if (url === '/1rBarxiA_BCS/BigData/webb/') {
                 nouA.setAttribute('id', 'actiu')
         }
-        else if (url === '/1rBarxiA_BCS/BigData/webb/aproximacio%20a%20la%20solucio') {
-            ///if (url === '/' + dicA[i] + '.html') {
-                nouA.setAttribute('id', 'actiu')
-            } */
-        elementNLi.prepend(nouA);
-    }
+    else if (url === '/1rBarxiA_BCS/BigData/webb/aproximacio%20a%20la%20solucio') {
+        ///if (url === '/' + dicA[i] + '.html') {
+            nouA.setAttribute('id', 'actiu')
+        } */
 }
 
 /// traker
