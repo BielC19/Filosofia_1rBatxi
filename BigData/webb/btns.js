@@ -33,13 +33,13 @@ window.onload = function() {
         ///if (url === '/' + dicA[i] + '.html') {
             nouA.setAttribute('id', 'actiu')
         }
-        else if (url === '/1rBarxiA_BCS/BigData/webb/') {
+/*        else if (url === '/1rBarxiA_BCS/BigData/webb/') {
                 nouA.setAttribute('id', 'actiu')
         }
         else if (url === '/1rBarxiA_BCS/BigData/webb/aproximacio%20a%20la%20solucio') {
             ///if (url === '/' + dicA[i] + '.html') {
                 nouA.setAttribute('id', 'actiu')
-            }
+            } */
         elementNLi.prepend(nouA);
     }
 }
