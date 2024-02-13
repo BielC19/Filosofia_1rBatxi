@@ -10,7 +10,7 @@ const lletres = ['a','b','c','d','e','f','g','h','i','j','k','l', 'ñ','m','n','
 
 const lletres2 = ['r1','r2','r3','r4','r5','r6','r7','r8','r9','r0','r11','r12'];
 
-const noFuncinen = []
+const noFuncinen = ['r2','r3','r5']
 
 const url = window.parent.location.pathname;
 console.log(url)
@@ -39,18 +39,18 @@ window.onload = function() {
 
         elementNLi.prepend(nouA);
     }
-    for (let i = 6; i >= 1; i--) {
         
-        let element = document.getElementById(noFuncinen[i])
 
         if (url === '/1rBarxiA_BCS/BigData/webb/') {
-            element.setAttribute('class', 'actiu')
+            document.getElementById(noFuncinen[0]).element.setAttribute('class', 'actiu')
         }
         else if (url === '/1rBarxiA_BCS/BigData/webb/aproximacio%20a%20la%20solucio') {
-        ///if (url === '/' + dicA[i] + '.html') {
-            element.setAttribute('class', 'actiu')
+            document.getElementById(noFuncinen[1]).element.setAttribute('class', 'actiu')
         }
-    }
+        
+        else if (url === '/1rBarxiA_BCS/BigData/webb/col%C2%B7laboraci%C3%B3') {
+            document.getElementById(noFuncinen[2]).element.setAttribute('class', 'actiu')
+        }
 }
 
 /// traker
