@@ -28,10 +28,10 @@ window.onload = function() {
 
         nouA.setAttribute('id', lletres2[i])
         nouA.setAttribute('target', '_top');
-        nouA.setAttribute('href', dicA[i]);
+        nouA.setAttribute('href', dicA[i] + '.html');
         ///nouA.setAttribute('href', dicA[i] + '.html');
         nouA.innerHTML = dicA[i];
-        if (url === '/1rBarxiA_BCS/BigData/webb/' + dicA[i]) {
+        if (url === '/1rBarxiA_BCS/BigData/webb/' + dicA[i] + '.html') {
         ///if (url === '/' + dicA[i] + '.html') {
             nouA.setAttribute('class', 'actiu')
         }
@@ -40,16 +40,15 @@ window.onload = function() {
         elementNLi.prepend(nouA);
     }
         
-
         if (url === '/1rBarxiA_BCS/BigData/webb/') {
-            document.getElementById(noFuncinen[0]).element.setAttribute('class', 'actiu')
+            document.getElementById(noFuncinen[0]).className = 'actiu'
         }
         else if (url === '/1rBarxiA_BCS/BigData/webb/aproximacio%20a%20la%20solucio') {
-            document.getElementById(noFuncinen[1]).element.setAttribute('class', 'actiu')
+            document.getElementById(noFuncinen[1]).className = 'actiu'
         }
         
         else if (url === '/1rBarxiA_BCS/BigData/webb/col%C2%B7laboraci%C3%B3') {
-            document.getElementById(noFuncinen[2]).element.setAttribute('class', 'actiu')
+            document.getElementById(noFuncinen[2]).className = 'actiu'
         }
 }
 
