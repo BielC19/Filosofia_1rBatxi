@@ -31,7 +31,7 @@ window.onload = function() {
         nouA.setAttribute('href', dicA[i] + '.html');
         ///nouA.setAttribute('href', dicA[i] + '.html');
         nouA.innerHTML = dicA[i];
-        if (url === '/1rBarxiA_BCS/BigData/webb/' + dicA[i] + '.html') {
+        if (url === '/1rBarxiA_BCS/BigData/webb/' + dicA[i]) {
         ///if (url === '/' + dicA[i] + '.html') {
             nouA.setAttribute('class', 'actiu')
         }
