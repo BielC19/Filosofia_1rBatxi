@@ -53,5 +53,3 @@ window.onload = function() {
             document.getElementById(noFuncinen[2]).className = 'actiu'
         }
 }
-
-/// traker
