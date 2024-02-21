@@ -39,12 +39,8 @@ window.onload = function() {
 
         elementNLi.prepend(nouA);
     }
-        
-        if (url === '/1rBarxiA_BCS/BigData/webb/') {
+        if (url === '/1rBarxiA_BCS/BigData/webb/%C3%ADndex') {
             document.getElementById(noFuncinen[0]).className = 'actiu'
-        }
-        else if (url === '/1rBarxiA_BCS/BigData/webb/%C3%ADndex') {
-            document.getElementById(noFuncinen[1]).className = 'actiu'
         }
         else if (url === '/1rBarxiA_BCS/BigData/webb/aproximaci%C3%B3%20a%20la%20soluci%C3%B3') {
             document.getElementById(noFuncinen[1]).className = 'actiu'
