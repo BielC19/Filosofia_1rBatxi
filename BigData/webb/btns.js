@@ -1,6 +1,6 @@
 //links
-const a1 = 'index'
-const a2 = 'aproximacio a la solucio'
+const a1 = 'índex'
+const a2 = 'aproximació a la solució'
 const a3 = 'beneficis'
 const a4 = 'col·laboració'
 const a5 = 'ganxo'
@@ -43,10 +43,12 @@ window.onload = function() {
         if (url === '/1rBarxiA_BCS/BigData/webb/') {
             document.getElementById(noFuncinen[0]).className = 'actiu'
         }
-        else if (url === '/1rBarxiA_BCS/BigData/webb/aproximacio%20a%20la%20solucio') {
+        else if (url === '/1rBarxiA_BCS/BigData/webb/%C3%ADndex') {
             document.getElementById(noFuncinen[1]).className = 'actiu'
         }
-        
+        else if (url === '/1rBarxiA_BCS/BigData/webb/aproximaci%C3%B3%20a%20la%20soluci%C3%B3') {
+            document.getElementById(noFuncinen[1]).className = 'actiu'
+        }
         else if (url === '/1rBarxiA_BCS/BigData/webb/col%C2%B7laboraci%C3%B3') {
             document.getElementById(noFuncinen[2]).className = 'actiu'
         }
