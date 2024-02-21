@@ -5,7 +5,8 @@ const a3 = 'beneficis'
 const a4 = 'col·laboració'
 const a5 = 'ganxo'
 const a6 = 'necessitat'
-const dicA = [0, a1, a2, a3, a4, a5, a6]
+const a7 = 'contacte'
+const dicA = [0, a1, a2, a3, a4, a5, a6, a7]
 const lletres = ['a','b','c','d','e','f','g','h','i','j','k','l', 'ñ','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
 const lletres2 = ['r1','r2','r3','r4','r5','r6','r7','r8','r9','r0','r11','r12'];

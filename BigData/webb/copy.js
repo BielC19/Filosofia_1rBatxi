@@ -1,9 +1,3 @@
 function copiarAlPortapapeles(id_elemento) {
-    var aux = document.createElement("input");
-    aux.setAttribute("value", document.getElementById(id_elemento).innerHTML);
-    document.body.appendChild(aux);
-    aux.select();
-    document.execCommand("copy");
-    document.body.removeChild(aux);+
-    alert("Copyed!")
+    window.open('https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=bielcostasmso%40insalba.cat&amp;authuser=0')
 }
