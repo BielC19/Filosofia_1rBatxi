@@ -29,7 +29,7 @@ window.onload = function() {
 
         nouA.setAttribute('id', lletres2[i])
         nouA.setAttribute('target', '_top');
-        nouA.setAttribute('href', dicA[i]);
+        nouA.setAttribute('href', dicA[i] + '.html');
         nouA.innerHTML = dicA[i];
         if (url === '/1rBarxiA_BCS/BigData/webb/' + dicA[i]) {
             nouA.setAttribute('class', 'actiu')

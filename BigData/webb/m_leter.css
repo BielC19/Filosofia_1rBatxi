@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;700&family=Raleway&display=swap');
+:root{
+    --colorPrinicpal: red;
+}
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -27,7 +30,7 @@ header{
     margin-bottom: 3em;
 }
 p span{
-    color:red;
+    color: var(--colorPrinicpal);
     font-size: 24px;
 }
 ul {
@@ -43,7 +46,7 @@ ul li::marker{
 }
 ul li::before {
     content: ">";
-    color: red;
+    color: var(--colorPrinicpal);
     font-size: 1em;
     background: #EDE9E9;
     border-radius: 1ch;
@@ -52,13 +55,25 @@ ul li::before {
 }
 ul li ul li::before {
     content: ">>  ";
-    color: red;
+    color: var(--colorPrinicpal);
     font-size: 1em;
     background: #EDE9E9;
     border-radius: 1ch;
     padding-inline: 1ch;
     margin-inline-end: 1ch;
 }
+.costat {
+    display: block;
+    top: 10px;
+    right: 0;
+    position: absolute;
+}
+.costat-img img {
+    
+    height: auto;
+    width: 50%;
+}
+
 @media screen and (max-width: 600px) {
     header p{
         font-family: 'Raleway', sans-serif;
@@ -87,7 +102,7 @@ ul li ul li::before {
         margin-bottom: 0;
     }
     p span{
-        color:red;
+        color: var(--colorPrinicpal);
         font-size: 19px;
     }
 }

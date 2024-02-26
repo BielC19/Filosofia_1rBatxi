@@ -12,7 +12,7 @@
     --text-size-s: 16px;
     --box-shadow-transition: box-shadow 0.2s ease-out 0s;
     --box-shadow-button: #f0f2f8 0px 0px 0px 2px;
-    --aaaa: rgb(255, 35, 35);
+    --aaaa: var(--name);
 }
 body{
     display: block;
