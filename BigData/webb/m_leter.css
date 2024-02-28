@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;700&family=Raleway&display=swap');
 :root{
     --colorPrinicpal: red;
+    --fons_div: #ffffff;
 }
 * {
     font-family: 'Raleway', sans-serif;
@@ -22,6 +23,20 @@ header{
     margin-right: 6em;
     margin-bottom: 1em;
     margin-left: 6em;
+    grid-area: main;
+}
+.totto {
+    display: grid;
+    grid-template-areas: 'main main main dreta';
+}
+.imgseses {
+    grid-area: dreta;
+    height: auto;
+    width: 20em;
+    background-color: var(--fons_div);
+    border-radius: 64px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .tot{
     text-align: justify;
