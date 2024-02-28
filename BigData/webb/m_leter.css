@@ -25,11 +25,21 @@ header{
     margin-left: 6em;
     grid-area: main;
 }
+.ftoCostat{
+    margin-left: 1em;
+    margin-right: 1em;
+}
 .totto {
     display: grid;
     grid-template-areas: 'main main main dreta';
+    
 }
 .imgseses {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
     grid-area: dreta;
     height: auto;
     width: 20em;
@@ -38,11 +48,31 @@ header{
     margin-top: 1em;
     margin-bottom: 1em;
 }
+.imgseses img {
+    height: auto;
+    width: 15em;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    object-position: center center;
+    margin: 1em;
+}
+#noCentre {
+    object-position: -2em 0;
+}
+#top{margin-bottom: 0;}
+
 .tot{
     text-align: justify;
     margin-left: 4em;
     margin-right: 4em;
     margin-bottom: 3em;
+    display: flex;
+}
+.tot img {
+    padding-top: 3.5em;
+    padding-left: 3em;
+    height: 100%;
+    width: 60%;
 }
 p span{
     color: var(--colorPrinicpal);
