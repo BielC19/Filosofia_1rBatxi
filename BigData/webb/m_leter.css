@@ -34,6 +34,10 @@ header{
     grid-template-areas: 'main main main dreta';
     
 }
+.imgeeessss{
+    height: auto;
+    width: 20%;
+}
 .imgseses {
     display: flex;
     align-content: center;
@@ -69,7 +73,7 @@ header{
     display: flex;
     flex-direction: column;
 }
-.tot img {
+.pax img {
     padding-top: 3.5em;
     padding-left: 3em;
     height: 100%;
