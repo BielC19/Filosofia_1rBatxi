@@ -77,7 +77,13 @@ header{
     padding-top: 3.5em;
     padding-left: 3em;
     height: 100%;
-    width: 60%;
+    width: 40%;
+}
+.pax {
+    display: flex;
+}
+.pax h1 {
+    width: max-content;
 }
 p span{
     color: var(--colorPrinicpal);
