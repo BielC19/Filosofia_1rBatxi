@@ -22,7 +22,7 @@ header, body {
 .videooos {
     margin-bottom: 2em;
 }
-div video {
+.videooos iframe {
     border-radius: 2em;
 }
 h1, h3{
