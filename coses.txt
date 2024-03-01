@@ -1,0 +1,4 @@
+https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=bielcostasmso%40insalba.cat&amp;authuser=0
+
+li numeros sols crec o ns si es triple
+.markdown ol>li:before{--tw-translate-x:-100%;--tw-numeric-spacing:tabular-nums;color:#9b9b9b;color:var(--text-tertiary);content:counters(list-number,".") ".";font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);padding-right:.5rem;position:absolute;-webkit-transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}

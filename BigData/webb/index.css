@@ -14,6 +14,17 @@ header {
 header, body {
     margin-top: 0;
 }
+#headerflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.videooos {
+    margin-bottom: 2em;
+}
+div video {
+    border-radius: 2em;
+}
 h1, h3{
     font-family: 'Hanken Grotesk', sans-serif;
 }
