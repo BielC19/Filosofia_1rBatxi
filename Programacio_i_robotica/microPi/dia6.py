@@ -16,4 +16,5 @@ while True:
             if angulo == 45:
                 print("Calibrat")
             duty = int((12.346*angulo**2 + 7777.8*angulo + 700000))
+            print(duty)
             servo_360.duty_ns(duty)

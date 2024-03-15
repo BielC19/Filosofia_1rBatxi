@@ -24,3 +24,4 @@ while True:
         duty = int((12.346*90**2 + 7777.8*90 + 700000))
         servo_360.duty_ns(duty)
         servo_360.duty_ns(-duty)
+
