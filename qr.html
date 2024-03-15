@@ -7,6 +7,8 @@
     <button type="button" onclick="generateQRCode()">
       Generate QR Code
     </button>
+    <!-- Add a button to save the QR code -->
+    <button type="button" onclick="saveQRCode()">Save QR Code</button>
   </form>
 
   <div id="qrcode-container">
@@ -37,6 +39,15 @@
       } else {
         alert("Please enter a valid URL");
       }
+    }
+    const tillle = document.querySelector("#qrcode").title
+    function saveQRCode() {
+      let qrCodeImage = document.getElementById("qrcode").querySelector("img").src;
+      
+      let downloadLink = document.createElement("a");
+      downloadLink.href = qrCodeImage;
+      downloadLink.download = tillle + ".png";
+      downloadLink.click();
     }
   </script>
 </div>
