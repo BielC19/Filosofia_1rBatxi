@@ -12,3 +12,24 @@ function customInputAlert() {
 function tancarA() {
     correcte.style.display = 'none';
 }
+const ball = document.getElementById('Wr1');
+
+const screenHeight = screen.availHeight;
+let ballTop = screenHeight;
+
+function animateBall() {
+    ball.style.position = 'absolute'
+    ballTop -= 5;
+    for (let index = 0; index < 2; index++) {
+        if (ballTop < 0) {
+            ballTop = screenHeight - ;
+        }
+        ball.style.top = ballTop + 'px';
+        requestAnimationFrame(animateBall);
+        setTimeout(1000)
+    }
+
+
+}
+
+animateBall();
