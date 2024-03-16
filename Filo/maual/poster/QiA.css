@@ -58,3 +58,23 @@ button:hover {
     background-color: #98685f;
     color: white;
 }
+#alerta{
+    display: flex;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(82, 82, 82, 0.89);
+    height: 50vh;
+    width: 55vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+#alerta button{
+    width: 15%;
+    padding: 10px;
+    background-color: green;
+}
