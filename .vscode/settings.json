@@ -1,5 +1,6 @@
 {
     "liveServer.settings.port": 5501,
     "editor.defaultFoldingRangeProvider": "esbenp.prettier-vscode",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "liveServer.settings.multiRootWorkspaceName": "1rBarxiA_BCS"
 }
