@@ -105,9 +105,6 @@
                 }
                 return crash;
             }
-            if (this.score>=1000) {
-                document.getElementById('fet').style.display = ''
-            }
         }
         
         function updateGameArea() {
@@ -134,6 +131,9 @@
                 myObstacles[i].x += -1;
                 myObstacles[i].update();
             }
+            if (myGameArea.frameNo>=600) {
+                document.getElementById('fet').style.display = 'flex'
+            }
             myScore.text="Puntuacio: " + myGameArea.frameNo;
             myScore.update();
             myGamePiece.newPos();
@@ -147,13 +147,15 @@
         
         function accelerate(n) {
             myGamePiece.gravity = n;
+            setTimeout()
         }
         </script>
         <br>
-        <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+        <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)" ontouchstart="accelerate(-0.2)" ontouchend="accelerate(0.05)">PUJA</button>
+
         <p>Apreta el PUJA per anar cap amunt</p>
-        <p>Al arriabar als 1000 punts poddras veure la resposta.</p>
-        <div id="fet">Ad Populum es l'intent de suscitar l'entusiasme, la simpatia o la pietat de l'auditori pretén suplir l'absência de les
+        <p>Al arriabar als 600 punts poddras veure la resposta.</p>
+        <div id="fet" style="display: none;">Ad Populum es l'intent de suscitar l'entusiasme, la simpatia o la pietat de l'auditori pretén suplir l'absência de les
             evidêncies necessaries per justificar la conclusió. Mira de convencer-nos que una afirmació és certa perqué la major part de la gent l'accepta. Però, en rigor es tracta d'un argument derrotable, perqué potser aquesta majoria estigui equivocada.</div>
         
 </body>
