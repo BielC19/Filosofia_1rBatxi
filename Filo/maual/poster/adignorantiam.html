@@ -103,6 +103,7 @@
     <button type="submit" id="guess-button">Prova sort</button>
 </form>
 <div id="attempts"></div>
+<p id="sisi" style="display: none;">Consisteix a sostenir que una afirmació ha de ser veritable quan ningú no ha estat capaç de demostrar que sigui falsa. També pot presentar-se a l'inrevés. El fet que no haguem pogut comprovar si alguna cosa és certa no implica que hagi de ser falsa (ni tampoc a l'inrevés). Té sempre aquesta forma: No se sap o no s'ha demostrat que la proposició p sigui vertadera (o falsa), per tant, és falsa (o vertadera)</p>
 <div id="hangman">
     <div class="hangman-part hangman-head"></div>
     <div class="hangman-part hangman-body"></div>
@@ -112,8 +113,10 @@
     <div class="hangman-part hangman-right-leg"></div>
 </div>
 
+
 <script>
-    const word = 'IGNORÀNCIA';
+    const corrrecte = document.getElementById('sisi');
+    const word = 'IGNORANCIA';
     let attempts = 6;
     let guessedLetters = [];
     let wordDisplay = [];
@@ -185,6 +188,7 @@
     }
     if (wordDisplay.join('') === word) {
         alert('Has guanyat! Et felicito.');
+        corrrecte.style.display = ''
     } else if (attempts === 0) {
         alert(`Has perdut! La paraula era: ${word}`);
     }
