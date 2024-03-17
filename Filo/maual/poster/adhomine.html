@@ -4,10 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="QiA.css">
     
-    <title>Document</title>
+    <title>Ad Hominem</title>
+    <style>
+        p{
+            font-size: larger;
+        }
+    </style>
 </head>
 <body>
+    <div class="tot" style="display: flex; justify-content: center; flex-direction: column;">
+        <div class="pregunta" style="display: flex; justify-content: center; flex-direction: column;"><h1>Endivina el numero per descobiri la definició</h1><p>Hola, introdueix el numero de la posicio d'aquesta falacia dints del dosier.</p><div id="tryesses"></div></div>
+        <div class="respostes" style="display: flex; justify-content: center;">
+            <input type="number" id="guess" min="1" max="10">
+            <button onclick="checkGuess()" style="position: relative;
+            width: 17%;
+            height: auto;
+            border-bottom-right-radius: 7px;
+        ">L'has encertat?</button><br>
+    <br>
+    <p id="resposta" style="display: none;">
+        Hominem, contra l'home, en comptes de refutar un argument, es produeix un atac personal contra qui l'ha formulat. D'aquesta manera ni tan sols s'analitza el contingut del que diu l'altra persona, perquè la resposta que s'ofereix és un atac personal.
+    </p>
+            <p id="result">
+
+            </p>
+
+
+            
+
+        </div>
+    </div>
     
+
+<script>
+    const numberToGuess = 1;
+const guessInput = document.getElementById('guess');
+const resultParagraph = document.getElementById('result');
+const resposta = document.getElementById('resposta');
+
+
+let intents = 0
+let encertda = false
+
+function checkGuess() {
+const guess = parseInt(guessInput.value);
+if (isNaN(guess)) {
+    resultParagraph.textContent = 'introdueix algo si vols decobtir de que tracta questa falacia, es de les primers de sosier.';
+    resposta.style.display = 'none';
+} else if (guess < numberToGuess) {
+    resultParagraph.textContent = 'Massa petit!';
+    resposta.style.display = 'none';
+} else if (guess > numberToGuess) {
+    resultParagraph.textContent = 'Massa alt!';
+    resposta.style.display = 'none';
+}
+else {
+    resposta.style.display = 'block'
+    resultParagraph.textContent = 'Molt be! l\'has encertat!!';
+}
+intents += 1
+}
+</script>
 </body>
 </html>

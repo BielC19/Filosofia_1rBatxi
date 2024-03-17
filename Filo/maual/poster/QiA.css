@@ -43,6 +43,7 @@ button {
 
 }
 button {
+    position: relative;
     width: 50%;
     height: auto;
     transition-duration: 0.4s;
@@ -85,11 +86,33 @@ button:hover {
 #alerta div{
     font-size: 20px;
 }
-#ball {
-    width: 50px;
-    height: 50px;
-    background-color: blue;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 0;
+
+.option {
+
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.option:hover {
+	background-color: #ccc;
+}
+
+.option.incorrect {
+	background-color: #f00;
+	animation: shake 0.5s;
+	animation-iteration-count: 1;
+}
+
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
