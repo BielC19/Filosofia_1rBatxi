@@ -149,9 +149,12 @@
             myGamePiece.gravity = n;
             setTimeout()
         }
+        function reinicia() {
+            location.reload()        }
         </script>
         <br>
         <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)" ontouchstart="accelerate(-0.2)" ontouchend="accelerate(0.05)">PUJA</button>
+        <button onclick="reinicia()">REINICIA</button>
 
         <p>Apreta el PUJA per anar cap amunt</p>
         <p>Al arriabar als 600 punts poddras veure la resposta.</p>

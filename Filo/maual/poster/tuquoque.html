@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="global.css">
-    
-    <title>Document</title>
+    <link rel="stylesheet" href="./QiA.css">
+    <link rel="stylesheet" href="./global.css">
+    <title>Argument Circular</title>
 </head>
 <body>
-    
+    <div class="tororo">
+    <img src="./qrs/do-as-I-say.jpg" alt="">
+    <div class="tot" >
+        <div class="pregunta"><h1>Quina de les seguents opcions defineix millor la falacia Ad Baculum?</h1> <div id="tryesses"></div> </div>
+        <div class="respostes">
+            <button onclick="animateBall()" class="option" data-correct="false">TU TAMBÉ. Quan ens trobem en una situació on rebem un atac verbal, una reacció freqüent és respondre amb una acusació semblant cap a la persona que ens ha atacat, fent servir la tàctica del "tu també".</button>
+            <button id="Wr1" onclick="animateBall()" class="option" data-correct="false">TU TAMBÉ. En lloc de refutar directament un argument, sovint optem per contraatacar qui ens ha atacat verbalment, retornant-li l'acusació.</button>
+            <button id="Wr2" onclick="animateBall()" class="option" data-correct="false">TU TAMBÉ. Quan ens trobem sotmesos a un atac verbal, una resposta comuna és replicar amb una acusació similar cap a la persona que ens ha atacat, invertint així la situació.</button>
+            <button id="Wr3" onclick="customInputAlert()" class="option" data-correct="true">TÚ TAMBÉ. En comptes de rebatre un argument, quan prèviament hem estat objecte d'un atac verbal, torneml'acusació a qui ens ha atacat.</button>
+            <div hidden id="result"></div>
+        </div>
+    </div></div>
+    <div id="alerta">
+        <h2 >Molt Be!</h2><div>Has seleccionat la respota correcte!!</div><button id="okky" onclick="tancarA()">Tancar</button></div>
+    <script src="./QiA.js"></script>
 </body>
 </html>
