@@ -9,7 +9,6 @@ function customInputAlert() {
     correcte.style.display = 'flex';
 };
 
-
 function tancarA() {
     correcte.style.display = 'none';
     alert('Moltes gracies, has passat la prova amb ' + textosos)

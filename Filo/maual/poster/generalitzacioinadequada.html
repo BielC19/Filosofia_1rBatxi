@@ -5,9 +5,249 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="global.css">
     
-    <title>Document</title>
-</head>
-<body>
+    <title>Generalització inadequada</title>
+    <style>
+        body{
+            padding-top: 2em;
+            margin-top: 12em;
+            background-color: darkorange;
+        }
+        #word {
+        display: flex;
+    
+        font-size: 2rem;
+        }
+        #guess-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        }
+        #guess-input {
+        height: 30px;
+        font-size: 1.5rem;
+        margin-right: 10px;
+        background-color: rgba(255, 255, 255, 0.512);
+        }
+        #guess-button {
+        background-color: rgba(255, 255, 255, 0.339);
+        height: 30px;
+        font-size: 1.5rem;
+        }
+        #attempts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        }
+        #hangman {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        margin-top: 20px;
+        }
+        .hangman-part {
+        height: 20px;
+        width: 20px;
+        background-color: #333;
+        margin: 5px;
+        }
+        .hangman-head {
+        border-radius: 50%;
+        background-color: #f00;
+        }
+        .hangman-body {
+        height: 40px;
+        width: 10px;
+        background-color: #333;
+        transform: rotate(-45deg);
+        }
+        .hangman-left-arm {
+        height: 20px;
+        width: 10px;
+        background-color: #333;
+        transform: rotate(45deg);
+        }
+        .hangman-right-arm {
+        height: 20px;
+        width: 10px;
+        background-color: #333;
+        transform: rotate(-45deg);
+        }
+        .hangman-left-leg {
+        height: 20px;
+        width: 10px;
+        background-color: #333;
+        transform: rotate(45deg);
+        }
+        .hangman-right-leg {
+        height: 20px;
+        width: 10px;
+        background-color: #333;
+        transform: rotate(-45deg);
+        }
+        #alerta{
+            display: none;
+        }
+    </style>
+    </head>
+    <body>
+    <h1>Endivina la el nom en catala de Ad Ignorantiam</h1>
+    <div id="word"></div>
+    <form id="guess-form">
+        <input type="text" id="guess-input" maxlength="1">
+        <button type="submit" id="guess-button">Prova sort</button>
+    </form>
+    <div id="attempts"></div>
+    <p id="sisi" style="display: none;">Consisteix a sostenir que una afirmació ha de ser veritable quan ningú no ha estat capaç de demostrar que sigui falsa. També pot presentar-se a l'inrevés. El fet que no haguem pogut comprovar si alguna cosa és certa no implica que hagi de ser falsa (ni tampoc a l'inrevés). Té sempre aquesta forma: No se sap o no s'ha demostrat que la proposició p sigui vertadera (o falsa), per tant, és falsa (o vertadera)</p>
+    <div id="hangman">
+        <div class="hangman-part hangman-head"></div>
+        <div class="hangman-part hangman-body"></div>
+        <div class="hangman-part hangman-left-arm"></div>
+        <div class="hangman-part hangman-right-arm"></div>
+        <div class="hangman-part hangman-left-leg"></div>
+        <div class="hangman-part hangman-right-leg"></div>
+    </div>
+    
+    
+    <script>
+        const corrrecte = document.getElementById('sisi');
+        const word = 'IGNORANCIA';
+        let attempts = 6;
+        let guessedLetters = [];
+        let wordDisplay = [];
+    
+        function init() {
+        for (let i = 0; i < word.length; i++) {
+            wordDisplay.push('_');
+        }
+        updateWord();
+        updateAttempts();
+        updateHangman();
+        }
+    
+        function updateWord() {
+        document.getElementById('word').textContent = 'Apel·lació a la ' + wordDisplay.join(' ');
+        }
+    
+        function updateAttempts() {
+        document.getElementById('attempts').textContent = `Intents restants: ${attempts}`;
+        }
+    
+        function updateHangman() {
+        const hangman = document.getElementById('hangman');
+        hangman.innerHTML = '';
+        if (attempts === 6) {
+            hangman.appendChild(createHangmanPart('head'));
+        }
+        if (attempts === 5) {
+            hangman.appendChild(createHangmanPart('body'));
+        }
+        if (attempts === 4) {
+            hangman.appendChild(createHangmanPart('left-arm'));
+        }
+        if (attempts === 3) {
+            hangman.appendChild(createHangmanPart('right-arm'));
+        }
+        if (attempts === 2) {
+            hangman.appendChild(createHangmanPart('left-leg'));
+        }
+        if (attempts === 1) {
+            hangman.appendChild(createHangmanPart('right-leg'));
+        }
+        }
+    
+        function createHangmanPart(part) {
+        const hangmanPart = document.createElement('div');
+        hangmanPart.classList.add('hangman-part');
+        hangmanPart.classList.add(`hangman-${part}`);
+        return hangmanPart;
+        }
+    
+        function guessLetter(letter) {
+        if (guessedLetters.includes(letter)) {
+            return;
+        }
+        guessedLetters.push(letter);
+        let correctGuess = false;
+        for (let i = 0; i < word.length; i++) {
+            if (word[i] === letter) {
+            wordDisplay[i] = letter;
+            correctGuess = true;
+            }
+        }
+        updateWord();
+        if (!correctGuess) {
+            attempts--;
+            updateAttempts();
+            updateHangman();
+        }
+        if (wordDisplay.join('') === word) {
+            alert('Has guanyat! Et felicito.');
+            corrrecte.style.display = ''
+        } else if (attempts === 0) {
+            alert(`Has perdut! La paraula era: ${word}`);
+        }
+        }
+    
+        document.getElementById('guess-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const guessInput = document.getElementById('guess-input');
+        const letter = guessInput.value.toUpperCase();
+        guessInput.value = '';
+        guessLetter(letter);
+        });
+    
+        init();
+    
+        const correcte = document.getElementById('alerta')
+    
+    function customInputAlert() {
+        correcte.style.display = 'flex';
+    };
+    
+    
+    function tancarA() {
+        correcte.style.display = 'none';
+        alert('Moltes gracies, has passat la prova amb ' + textosos)
+        setTimeout(() => window.close('','_top',''), 1000);
+    }
+    const options = document.querySelectorAll('.option');
+    const result = document.getElementById('result');
+    const intents = document.getElementById('tryesses');
+    
+    let proves = 0;
+    let textosos = proves + ' intents'
+    
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            options.forEach(o => o.disabled = false);
+            if (option.dataset.correct === 'true') {
+                result.textContent = 'Correct!';
+                result.style.color = '#0f0';
+            } else {
+                result.textContent = 'Incorrect!';
+                result.style.color = '#f00';
+                option.classList.add('incorrect');
+                setTimeout(() => option.classList.remove('incorrect'), 500);
+            }
+            proves += 1;
+            if (proves==1) {
+                textosos = proves + ' intent'
+            }
+            else{
+                textosos = proves + ' intents'
+            }
+            intents.textContent = 'portes ' + textosos
+        });
+    });
+    
+        </script>
+        <div id="alerta">
+            <h2 >Molt Be!</h2><div>Has seleccionat la respota correcte!!</div><button id="okky" onclick="tancarA()">Tancar</button></div>
     
 </body>
 </html>

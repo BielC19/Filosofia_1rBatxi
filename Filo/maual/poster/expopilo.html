@@ -5,9 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="global.css">
     
-    <title>Document</title>
+    <title>Ex Populo</title>
 </head>
 <body>
+    <div class="tot" style="display: flex; justify-content: center; flex-direction: column;">
+        <div class="pregunta" style="display: flex; justify-content: center; flex-direction: column;"><h1>Endivina el numero per descobiri la definició</h1><p>Hola, introdueix el numero de la posicio d'aquesta falacia dints del dosier.</p><div id="tryesses"></div></div>
+        <div class="respostes" style="display: flex; flex-direction: column; justify-content: center;"><div>
+            <input type="number" id="guess" min="1" max="10">
+            <button onclick="checkGuess()" style="position: relative;
+            width: 17%;
+            height: auto;
+            border-bottom-right-radius: 7px;
+        ">L'has encertat?</button></div>
+    <br>
+    <p id="resposta" style="display: none; width: 80%; margin-left: 5%;">
+        Un argument ex populo o sofisma populista és una fal·làcia que implica respondre a un argument o a una afirmació referint-se a la suposada opinió que d'això té la gent en general, en lloc de a l'argument per si mateix.
+    </p>
+            <p id="result">
+            </p>
+        </div>
+    </div>
     
+
+<script>
+    const numberToGuess = 6;
+const guessInput = document.getElementById('guess');
+const resultParagraph = document.getElementById('result');
+const resposta = document.getElementById('resposta');
+
+
+let intents = 0
+let encertda = false
+
+function checkGuess() {
+const guess = parseInt(guessInput.value);
+if (isNaN(guess)) {
+    resultParagraph.textContent = 'introdueix algo si vols decobtir de que tracta questa falacia, es de les primers de sosier.';
+    resposta.style.display = 'none';
+} else if (guess < numberToGuess) {
+    resultParagraph.textContent = 'Massa petit!';
+    resposta.style.display = 'none';
+} else if (guess > numberToGuess) {
+    resultParagraph.textContent = 'Massa alt!';
+    resposta.style.display = 'none';
+}
+else {
+    resposta.style.display = 'block'
+    resultParagraph.textContent = 'Molt be! l\'has encertat!!';
+}
+intents += 1
+}
+</script>
 </body>
 </html>

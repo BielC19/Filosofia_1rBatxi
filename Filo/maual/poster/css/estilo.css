@@ -26,41 +26,41 @@ body > section.prin
 article#bot1
 	{
 		width: 150px; 
-     	height: 150px;  
-     	background: rgba(255, 0, 0, 0.3);
-     	-moz-border-radius: 100% 0 0 0;
-     	-webkit-border-radius: 100% 0 0 0;
-     	border-radius: 100% 0 0 0;
+		height: 150px;  
+		background: rgba(255, 0, 0, 0.3);
+		-moz-border-radius: 100% 0 0 0;
+		-webkit-border-radius: 100% 0 0 0;
+		border-radius: 100% 0 0 0;
 	}
 
 article#bot2
 	{
 		width: 150px; 
-     	height: 150px;  
-     	background: rgba(0, 0, 255, 0.3);
-     	-moz-border-radius: 0 100% 0 0;
-     	-webkit-border-radius: 0 100% 0 0;
-     	border-radius: 0 100% 0 0;
+		height: 150px;  
+		background: rgba(0, 0, 255, 0.3);
+		-moz-border-radius: 0 100% 0 0;
+		-webkit-border-radius: 0 100% 0 0;
+		border-radius: 0 100% 0 0;
 	}
 
 article#bot3
 	{
 		width: 150px; 
-     	height: 150px;  
-     	background: rgba(255, 255, 0, 0.3);
-     	-moz-border-radius: 0 0 0 100%;
-     	-webkit-border-radius: 0 0 0 100%;
-     	border-radius: 0 0 0 100%;
+		height: 150px;  
+		background: rgba(255, 255, 0, 0.3);
+		-moz-border-radius: 0 0 0 100%;
+		-webkit-border-radius: 0 0 0 100%;
+		border-radius: 0 0 0 100%;
 	}
 
 article#bot4
 	{
 		width: 150px; 
-     	height: 150px;  
-     	background: rgba(0, 255, 0, 0.3);
-     	-moz-border-radius: 0 0 100% 0;
-     	-webkit-border-radius: 0 0 100% 0;
-     	border-radius: 0 0 100% 0;
+		height: 150px;  
+		background: rgba(0, 255, 0, 0.3);
+		-moz-border-radius: 0 0 100% 0;
+		-webkit-border-radius: 0 0 100% 0;
+		border-radius: 0 0 100% 0;
 	}
 
 /*------------ CONTENEDOR DE MENSAJE ------------*/
@@ -87,11 +87,11 @@ article#bot4
 
 .contenedor > h2
 	{
-		 font-size: 50px;
-		 grid-area: titulo;
-		 color: white;
-		 align-self: center;
-		 text-align:center;
+		font-size: 50px;
+		grid-area: titulo;
+		color: white;
+		align-self: center;
+		text-align:center;
 	}
 
 .contenedor > input
@@ -103,7 +103,7 @@ article#bot4
 		background-color: rgba(0,255,0,0.5);
 		color: white;
 		border:none;
-	    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+		box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
 	}
 
 .contenedor > input:hover

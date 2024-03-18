@@ -7,21 +7,27 @@
     <link rel="stylesheet" href="QiA.css">
     
     <title>Ad Hominem</title>
-
+    <style>
+        body{background-color: #BFC0C2;}
+    </style>
 </head>
 <body>
     <div class="tot" style="display: flex; justify-content: center; flex-direction: column;">
         <div class="pregunta" style="display: flex; justify-content: center; flex-direction: column;"><h1>Endivina el numero per descobiri la definició</h1><p>Hola, introdueix el numero de la posicio d'aquesta falacia dints del dosier.</p><div id="tryesses"></div></div>
-        <div class="respostes" style="display: flex; justify-content: center;">
+        <div class="respostes" style="display: flex; flex-direction: column; justify-content: center;"><div>
             <input type="number" id="guess" min="1" max="10">
-            <button onclick="checkGuess()" style="position: relative;
+            <button onclick="checkGuess()" style="
+            position: relative;
             width: 17%;
             height: auto;
             border-bottom-right-radius: 7px;
-        ">L'has encertat?</button><br>
+            border-top-right-radius: 7px;
+        padding-left: 0;
+        padding-left: 0;
+        ">L'has encertat?</button></div>
     <br>
     <p id="resposta" style="display: none;">
-        Hominem, contra l'home, en comptes de refutar un argument, es produeix un atac personal contra qui l'ha formulat. D'aquesta manera ni tan sols s'analitza el contingut del que diu l'altra persona, perquè la resposta que s'ofereix és un atac personal.
+        Apel·lació a la majoria un argument ex populo o sofisma populista és una fal·làcia que implica respondre a un argument o a una afirmació referint-se a la suposada opinió que d'això té la gent en general, en lloc de a l'argument per si mateix.
     </p>
             <p id="result">
 
