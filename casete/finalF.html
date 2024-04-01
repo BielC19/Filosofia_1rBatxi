@@ -203,9 +203,8 @@ p{
             location.reload()        }
         
         function tancarA() {
-    correcte.style.display = 'none';
+            document.getElementById('alertas').style.display = 'none';
     alert('Muchas gracias, has passador la prueva')
-    setTimeout(() => window.close('','_top',''), 1000);
 };
         </script>
         <br><div style="display: flex; flex-direction: row;">
@@ -219,6 +218,9 @@ p{
                 Si no te ha gustado este final puedes cambiar tus elecciones para llegar a otras historias.<br><button id="okky" onclick="tancarA()">Cierra</button></div>
 
         <div id="fet" style="display: none;">La nostre premissa expresa un fet i la conclusió expresssa una norma, una obligació o un deure.</div>
-        
+        <script>        function tancarA() {
+            document.getElementById('alertas').style.display = 'none';
+    alert('Muchas gracias, has passador la prueva')
+};</script>
 </body>
 </html>
