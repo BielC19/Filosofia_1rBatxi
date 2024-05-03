@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tasca3.css">
+    <title>Tasca 3</title>
+</head>
+<body>
+    <div onload="cookies()" class="missatge">
+        <p>vols acceptar<a target="_blank" href="./cookies.html"> Les Cookies</a>?</p><br>
+            <input id="si" type="button" value="si"><input onclick="no()" type="button" id="no" value="no">
+            <p id="aara"></p>
+    </div>
+    <div>
+    <h1 id="top">Blog sobre las zapatillas Jumpman de Travis Scott</h1>
+
+    <h2>Introducción</h2>
+
+    Las zapatillas Jumpman de Travis Scott son el resultado de una colaboración entre la marca Jordan y el reconocido artista de rap Travis Scott¹. Estas zapatillas no son solo una adición fresca a la línea Jordan, sino que también son un homenaje a las décadas de cultura del baloncesto y del skate¹.
+
+    <h2>Diseño y características</h2>
+
+    El diseño de estas zapatillas refleja el estilo distintivo y la visión creativa de Travis Scott¹. La parte superior de la zapatilla está hecha de lona marrón oscuro y superposiciones de cuero blanco roto, lo que proporciona una estética de alto contraste y una durabilidad duradera¹. Cuenta con un cierre de cordones tradicional y una correa ajustable en el mediopié para un ajuste seguro, así como una entresuela de espuma para la absorción de impactos y el retorno de energía¹.
+
+    Lo que los expertos disfrutan especialmente de las Air Jordan Cut The Check TR Travis Scott Sail, sin embargo, son los acentos rojos contrastantes en el icono de Jumpman y el logo de la cara de Cactus Jack que se pueden encontrar en la lengüeta y el talón del zapato, respectivamente¹.
+
+    <h2>Lanzamiento y disponibilidad</h2>
+
+    Las zapatillas Jumpman de Travis Scott se lanzaron originalmente el 30 de abril de 2024 con un precio de venta al público de 200 dólares¹². 
+
+    <h2>Conclusión</h2>
+
+    Las zapatillas Jumpman de Travis Scott son más que un par de zapatillas. Son una declaración de estilo, una pieza de cultura del baloncesto y del skate, y un testimonio del talento y la visión creativa de Travis Scott.
+
+    En cuanto al logo, estoy trabajando en ello y te lo mostraré en breve.
+    <h1>Bienvenido a “Zapatillas para el Alma”</h1>
+<h2>Introducción</h2>
+¡Hola a todos! Bienvenidos a nuestro blog “Zapatillas para el Alma”. Aquí, exploraremos el fascinante mundo de las zapatillas, desde los últimos lanzamientos hasta las tendencias de moda y los consejos de cuidado. ¡Así que atémonos los cordones y comencemos este viaje!
+
+<h2>Últimas Tendencias</h2>
+Las zapatillas han evolucionado más allá de ser un simple calzado deportivo. Hoy en día, son una declaración de estilo, un símbolo de la cultura urbana y una pieza esencial en cualquier guardarropa. Desde las clásicas Converse hasta las modernas Yeezy, las zapatillas han conquistado el mundo de la moda.
+
+<h2>Cuidado y Mantenimiento</h2>
+El cuidado adecuado puede prolongar la vida de tus zapatillas favoritas. Aquí te ofreceremos consejos sobre cómo limpiar tus zapatillas, cómo protegerlas de los elementos y cómo mantenerlas en la mejor forma posible.
+
+<h2>Reseñas de Productos</h2>
+¿Estás pensando en comprar un nuevo par de zapatillas pero no estás seguro de cuál elegir? No te preocupes, tenemos cubierto. En esta sección, proporcionaremos reseñas detalladas de las últimas zapatillas en el mercado para ayudarte a tomar una decisión informada.
+
+<h2>Conclusión</h2>
+Ya sea que seas un entusiasta de las zapatillas o simplemente estés buscando un par cómodo para el uso diario, esperamos que encuentres algo de valor en nuestro blog. ¡Nos vemos en el próximo post!
+    <br><br><br>
+    <button><a href="#top" style="color: black;">Puja</a></button>
+    <footer>
+        <a target="_blank" href="./cookies.html">Cookies</a>
+    </footer>
+    </div>
+    <script>
+        var si = document.getElementById("si");
+        var no = document.getElementById("no");
+        var misatge = document.querySelector('.missatge');
+        var a = document.getElementById("aara");
+        var n = 0
+        function cookies() {
+            missatge.style.display = "show";
+        };
+        si.onclick = function() {sii()};
+        function sii() {
+                misatge.style.display = "none";
+            };
+        no.onclick = function() {noo()}
+        function noo() {
+            if (n%2==0) {
+                a.innerHTML = 'si no apretes si anem malament pq no surts de ahir';
+                misatge.style.backgroundColor = 'blue';
+            }
+            else {
+            misatge.style.backgroundColor = 'red';
+            alert('estas segut');
+            a.innerHTML = 'Segut????';}
+            n += 1;
+        };
+        
+        </script>
+</body>
+</html>

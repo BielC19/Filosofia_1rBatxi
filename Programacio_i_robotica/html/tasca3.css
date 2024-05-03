@@ -1,0 +1,21 @@
+
+a:link{color: aqua;}
+a:visited{color: rgb(219, 219, 219);}
+a:hover{color: red;}
+a:active{color: yellow;}
+footer{
+    padding-left: 4em;
+    align-content: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: rgb(77, 76, 76);
+}
+.missatge{
+    color: white;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.534);
+    position: fixed;
+    top: 35%;
+    left: 35%;
+    padding: 3em;
+}
