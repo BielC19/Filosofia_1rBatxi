@@ -1,5 +1,6 @@
 ul {
     color: blue;
+    list-style: none;
 }
 ol {
     color: black;
