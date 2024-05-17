@@ -1,0 +1,88 @@
+<!--Crea una estructura bàsica d'HTML que inclogui un encapçalament, una secció principal i un peu de pàgina.
+A l'encapçalament, afegeix un títol per a la teva pàgina de receptes.A la secció principal, crea una llista de receptes utilitzant l'etiqueta <ul> (llista no ordenada) o <ol> (llista ordenada). Cada element de la llista representarà una recepta.
+Per a cada recepta, crea un títol utilitzant l'etiqueta <h2> i una descripció breu utilitzant l'etiqueta <p>. Pots utilitzar receptes reals o inventades
+.Per a cada recepta, insereix una imatge relacionada utilitzant l'etiqueta <img>. Assegura't que la imatge estigui emmagatzemada en el teu projecte i proporciona la ruta correcta en l'atribut src de l'etiqueta <img>.
+Afegeix enllaços hipertexte a cada recepta utilitzant l'etiqueta <a>. Pots enllaçar a pàgines externes amb la recepta completa o simplement afegir un enllaç fictici per representar la pàgina de detalls de cada recepta.
+Estilitza la teva pàgina utilitzant CSS. Personalitza els colors, les fonts, les mides de text i les vores per aconseguir una presentació atractiva.
+Afegeix un peu de pàgina amb informació addicional, com els drets d'autor o un enllaç a la teva pàgina personal.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptes delicioses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Receptes delicioses</h1>
+    </header>
+    <main>
+        <h2>Receptes</h2>
+        <ul>
+            <li>
+                <h3>Tortilla de patata</h3>
+                <p>Una tortilla de patata clásica y deliciosa.</p>
+                <img src="tortilla-de-patata.jpg" alt="Tortilla de patata">
+                <a href="tortilla-de-patata.html">Més informació</a>
+            </li>
+            <li>
+                <h3>Paella valenciana</h3>
+                <p>Una paella valenciana auténtica y deliciosa.</p>
+                <img src="paella-valenciana.jpg" alt="Paella valenciana">
+                <a href="paella-valenciana.html">Més informació</a>
+            </li>
+            <li>
+                <h3>Crema catalana</h3>
+                <p>Una crema catalana cremosa y deliciosa.</p>
+                <img src="crema-catalana.jpg" alt="Crema catalana">
+                <a href="crema-catalana.html">Més informació</a>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 Receptes delicioses. Tots els drets reservats.</p>
+    </footer>
+</body>
+</html>
