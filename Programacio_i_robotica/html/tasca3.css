@@ -7,7 +7,7 @@ footer{
     padding-left: 4em;
     align-content: center;
     justify-content: center;
-    height: 10vh;
+    height: 40vh;
     background-color: rgb(77, 76, 76);
 }
 .missatge{
@@ -20,6 +20,10 @@ footer{
     align-items: center;
     justify-content: center;
 }
+.a1{
+    height: 10vh;
+    width: auto;
+}
 img{
     height: 30vh;
     width: auto;
@@ -31,4 +35,9 @@ img{
     padding: 3em;
     font-size: 1.5em;
     background-color: rgba(88, 88, 88);
+}
+button{
+    position: fixed;
+    bottom: 2em;
+    right: 1em;
 }
