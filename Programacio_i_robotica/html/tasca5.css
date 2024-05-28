@@ -26,5 +26,9 @@ a{
     text-decoration-line: none;
 }
 img{
-    height: 20vh; position: absolute; top: 14em; left: 15em;
+    height: 20vh; position: absolute; top: 14em; left: 18em; border-radius: 15%;
+}
+section{
+    margin-left: 4em;
+    margin-bottom: 2em;
 }
