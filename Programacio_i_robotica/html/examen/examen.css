@@ -5,6 +5,9 @@ body {
     height: auto;
     width: auto;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+
 }
 .top{
     display: flex;
@@ -60,17 +63,17 @@ header h1 {
 }
 
 table {
-    width: 100%;
+    width: 80%;
+    height: auto;
     border-collapse: collapse;
-    margin: 1rem 0;
+    margin-right: 1em;
+    margin-left: 1em    ;
 }
-
 table, th, td {
     border: 1px solid #ddd;
 }
-
 th, td {
-    padding: 0.5rem;
+    padding: 0.5em;
     text-align: center;
 }
 
@@ -78,49 +81,42 @@ thead {
     background-color: #f2f2f2;
 }
 
-
+.a5{
+    margin-left: 2em;
+}
 ul {
     padding: 0;
     list-style-type: none;
 }
-
 ul li {
-    margin: 1rem 0;
+    margin: 1em 0;
+    font-weight: 900;
 }
-
 ol {
     list-style-type: decimal;
-    margin-left: 2rem;
+    margin-left: 2em;
+}
+ol li {
+    font-weight: 100;
 }
 
-.social-media {
+.xxarser {
     display: flex;
-    gap: 1rem;
+
 }
-
-.social-icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: #ddd;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    transition: background-color 0.3s;
+.xxarser img{
+    height: 10vh;
+    width: auto;
 }
-
-.facebook { background-color: #3b5998; }
-.twitter { background-color: #1da1f2; }
-.instagram { background-color: #e1306c; }
-
-.social-icon:hover {
+.xxarser a:hover {
     background-color: #666;
 }
-
-.social-icon:link, .social-icon:visited {
+.xxarser a{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+}
+.xxarser:visited {
     color: white;
     text-decoration: none;
-}
-.asasda{
-    
 }
