@@ -21,9 +21,13 @@ async function enviarScript(scriptText){
 	
 	return lines.length;
 }
+
+const text = 'hollaaaa'
+const vegades = 10
+
 let ar = ''
-for (let index = 0; index < 10; index++) {
-    ar += 'holaa \n'
+for (let index = 0; index < vegades; index++) {
+    ar += text + '  \n'
 }
 console.log(ar)
 enviarScript(ar).then(e => console.log(`Código finalizado, ${e} mensagens enviadas`)).catch(console.error)
